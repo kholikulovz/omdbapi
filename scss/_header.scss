@@ -1,0 +1,110 @@
+.header{
+    position: fixed;
+    // display: inline-block;
+    background: #A73489;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    &__section{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        // width: 300px;
+        // max-width: 100%;
+    }
+    &__bookmark{
+        position: absolute;
+        top: 15px;
+        right: 55px;
+        
+        border: none;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        
+        &--active{
+            color: rgb(124, 7, 7);
+            transform: scale(1.02);
+        }
+    }
+}
+
+.sidebar{
+    position: fixed;
+    max-width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    display: none;
+    align-items: flex-start;
+    justify-content: last baseline;
+    overflow: auto;
+    &--active{
+        z-index: 2;
+        display: flex;
+    }
+    &__wrapper{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 536px;
+        min-height: 100vh;
+        background: #ee9ed9;
+        border: 2px solid #000000;
+        box-sizing: border-box;
+        transition: var(--transition);
+        padding: 30px;
+        overflow: auto;
+
+        .cards__like--btn{
+            display: none;
+        }
+    }
+}
+  @media screen and (max-width: 375px) {
+    .sidebar{
+        &__wrapper{
+            width: 310px;
+        }
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .sidebar{
+        &__wrapper{
+            width: 400px;
+        }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .sidebar{
+        &__wrapper{
+            width: 310px;
+        }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .sidebar{
+        &__wrapper{
+            width: 310px;
+        }
+    }
+  }
+
+.close-btn {
+    font-size: 1.75rem;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+    cursor: pointer;
+    color: var(--clr-red-dark);
+}
+.close-btn:hover {
+    color: var(--clr-red-light);
+    transform: rotate(360deg);
+}

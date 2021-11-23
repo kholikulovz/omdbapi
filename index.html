@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMDBApi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body> 
+    <header class="header">
+        <div class="container">
+            <section class="header__section">
+                <img src="./img/star-movies-hd-logo-removebg-preview.png" width="200" alt="films__logo">
+            </section
+        </div> 
+    </header>
+    <main class="main">
+        <section class="films">
+            <div class="container">
+                <form id='form' class="form">
+                    <input class="films__search" type="search" id="search" placeholder="Search.....">
+                    <select class="films__filter select" name="films__filter" id="films__filter">
+                        <option class="options" value="A_Z">A_Z</option>
+                        <option class="options" value="Z_A">Z_A</option>
+                        <option class="options" value="new_old">new_old</option>
+                        <option class="options" value="old_new">old_new</option>
+                    </select>
+                    <button type="submit" id="btn">Search</button>
+                </form> 
+                <div class="btn__wrapper">
+                    <button id="prev">Prev</button>
+                    <button id="next">Next</button>
+                </div>
+                <ul class="films__card-menu"> 
+                    <template id="template">
+                        <li class="films__card">
+                            <img class="films__img" src="https://picsum.photos/300">
+                            <h2 class="films__card-title">Shazam</h2>
+                            <time class="films__release-date">1970</time>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title">2021</h2>
+        </div>
+    </footer>
+    <script src="./js/util.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono";
+  background-color:  #FCD2D1;
+  min-height: 100vh;
+}
+
+p {
+  font-family: "Lexend Deca";
+}
+
+.container {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 689px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 311px;
+    margin: 10px;
+  }
+}
