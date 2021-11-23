@@ -6,12 +6,12 @@ const elSearch = selectElem('.films__search', elForm);
 const elTemplate = selectElem('#template').content;
 
 const key = '2117e134';
-let searchFilm = 'Venom'
+let searchFilm = ''
 
 elForm.addEventListener('submit', ()=>{
     let inputValue =  elSearch.value.trim();
     searchFilm = inputValue;
-    elSearch.value = '';
+    elSearch.value = 'Venom';
     fetchMovies()
 })
 
