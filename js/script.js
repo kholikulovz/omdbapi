@@ -37,7 +37,7 @@ let movieArr = [];
 let totalResults;
 async function fetchMovies(){
     elMenu.innerHTML = '<img src="./img/spinner.svg" alt="spinner"/>'
-    let response = await fetch(`http://www.omdbapi.com/?apikey=${key}&s=${searchFilm}&page=${pageCount}&type`);
+    let response = await fetch(`http://www.omdbapi.com/?apikey=${key}&s=Venom&page=${pageCount}&type`);
     movieArr = await response.json();
     totalResults = movieArr.totalResults
     console.log(movieArr.Search)
